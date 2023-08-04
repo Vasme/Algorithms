@@ -1,0 +1,19 @@
+Pseudocode for the implementation
+
+1. Create a tree using dictionary having key with multiple values
+2. Create an empty queue and visited list
+3. Initialize the root node to a variable as
+        Current_node = root
+3. Traverse the tree and then append the Current_node in queue
+4. loop:
+        	4.1 Append the visited node  in the visited list
+          	4.2  for each element  in keys
+                             4.2.1  test (current node == element ) && tree[elem]  ! = none
+	                                  4.2.1.1  for each  value in (length of tree’s element )
+                                                    Append in queue  the traversed element
+            	4.3   Pop queue’s 1st element
+                4.4 	test if (queue’s length ==0)
+        	                            break
+                            else
+                                  	Current_node = queue[0]
+           	Print visited nodes
